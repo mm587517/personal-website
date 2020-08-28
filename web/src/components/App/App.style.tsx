@@ -14,6 +14,15 @@ export const Container = styled.div<{ color: keyof ITheme }>`
   align-items: center;
 `;
 
+export const OverContainer = styled.div`
+  width: '100%';
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
 export const H1 = styled.h1`
   -webkit-text-stroke: 1px black; /* width and color */
   color: white;
