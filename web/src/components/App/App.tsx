@@ -1,16 +1,18 @@
 import React from 'react';
-import { ImgContainer, H1 } from './App.style';
-
-const BACKGROUND = require('../../assets/background.png');
+import { Container, H1 } from './App.style';
+import { ThemeProvider } from 'styled-components';
+import { Theme } from '../../Theme/theme';
+import { Name } from '../../assets/svgs/Name/Name';
 
 function App() {
+  const logo = document.querySelectorAll('#logo path');
+  console.log(logo);
   return (
-    <>
-      <ImgContainer address={BACKGROUND}>
-        <H1>MARCELO MORALES</H1>
-      </ImgContainer>
-      <H1>hello there</H1>
-    </>
+    <ThemeProvider theme={Theme}>
+      <Container color='primary'>
+        <Name />
+      </Container>
+    </ThemeProvider>
   );
 }
 

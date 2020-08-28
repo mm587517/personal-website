@@ -2,7 +2,7 @@ export const Theme = {
   primary: {
     text: null,
     line: null,
-    background: null,
+    background: '#2F3A40',
     shadow: null,
   },
 
