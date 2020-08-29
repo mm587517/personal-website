@@ -83,7 +83,7 @@ export const Resume = () => {
       url: aws,
     },
     {
-      name: 'Github',
+      name: 'GitHub',
       url: git,
     },
     {
@@ -99,9 +99,10 @@ export const Resume = () => {
       url: postman,
     },
     {
-      name: 'Android Studio',
+      name: 'AndroidStudio',
       url: aso,
     },
+    { name: 'VSCode', url: vs },
     {
       name: 'IntelliJ',
       url: intell,
@@ -127,8 +128,12 @@ export const Resume = () => {
   return (
     <>
       <About />
-      <IconSection icons={languages} />
-      <IconSection icons={frameworks} />
+
+      <IconSection icons={languages} category='Languages: ' />
+
+      <IconSection icons={frameworks} category='Frameworks: ' />
+
+      <IconSection icons={tools} category='Tools: ' />
     </>
   );
 };

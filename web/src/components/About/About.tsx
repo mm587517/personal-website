@@ -1,8 +1,10 @@
 import React from 'react';
 import { InfoCard } from '../InfoCard/InfoCard';
+import { PersonalCard } from '../PersonalCard/PersonalCard';
 
 export const About = () => {
   const qr = require('../../assets/Logos/githubqr.png');
+  const me = require('../../assets/Logos/me.png');
 
   const cards = [
     {
@@ -44,5 +46,17 @@ export const About = () => {
     },
   ];
 
-  return <InfoCard cards={cards} />;
+  const title = 'Hi! Allow me to tell you more about myself.';
+
+  const text =
+    'I am an undergraduate student at Ohio University majoring in Computer Science with a minor in Mathematics. I am also co-founder of Games by the Minute, Inc. My primary interests are frontend & backend developement, Blockchain technology, and hardware security.';
+
+  return (
+    <>
+      <br />
+      <PersonalCard text={text} url={me} title={title} />
+      <br />
+      <InfoCard cards={cards} />
+    </>
+  );
 };

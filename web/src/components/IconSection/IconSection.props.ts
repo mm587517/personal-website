@@ -5,4 +5,5 @@ export interface IconDisplayProps {
 
 export interface IconSectionProps {
   icons: IconDisplayProps[];
+  category: string;
 }
