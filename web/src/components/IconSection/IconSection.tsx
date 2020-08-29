@@ -1,19 +1,26 @@
 import React from 'react';
 import { Icon } from '../Icon/Icon';
-import { IconContainer, Section } from './IconSection.style';
+import {
+  IconContainer,
+  StyledGrid,
+  StyledTypography,
+  StyledGrid2,
+} from './IconSection.style';
 import { IconDisplayProps, IconSectionProps } from './IconSection.props';
 
 export const IconSection: React.FC<IconSectionProps> = ({ icons }) => {
   return (
-    <Section>
+    <StyledGrid container direction='row' justify='space-between' spacing={10}>
       {icons.map((icon: IconDisplayProps, index) => {
         return (
-          <IconContainer>
-            <Icon url={icon.url} />
-            <p>{icon.name}</p>
-          </IconContainer>
+          <StyledGrid2 item>
+            <IconContainer>
+              <Icon url={icon.url} />
+              <StyledTypography>{icon.name}</StyledTypography>
+            </IconContainer>
+          </StyledGrid2>
         );
       })}
-    </Section>
+    </StyledGrid>
   );
 };

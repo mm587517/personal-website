@@ -1,8 +1,9 @@
 import { styled } from '../../Theme/styled';
+import { Grid, Typography } from '@material-ui/core';
 
 export const IconContainer = styled.div`
   margin: auto;
-  width: 10%;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,11 +14,17 @@ export const IconContainer = styled.div`
   }
 `;
 
-export const Section = styled.div`
-  width: 50%;
+export const StyledGrid = styled(Grid)`
+  width: 80%;
+  margin: auto;
+`;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
+export const StyledGrid2 = styled(Grid)`
+  width: 10%;
+  margin: auto;
+`;
+
+export const StyledTypography = styled(Typography)`
+  color: #2f3a40;
+  font-family: 'Arial';
 `;

@@ -21,7 +21,7 @@ export const StyledCard = styled(Card)`
 `;
 
 export const StyledTypography = styled(Typography)`
-  color: '#2f3a40';
+  color: #2f3a40;
   font-family: 'Arial';
 `;
 
