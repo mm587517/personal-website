@@ -6,7 +6,7 @@ import { IconDisplayProps, IconSectionProps } from './IconSection.props';
 export const IconSection: React.FC<IconSectionProps> = ({ icons }) => {
   return (
     <Section>
-      {icons.map((icon: IconDisplayProps) => {
+      {icons.map((icon: IconDisplayProps, index) => {
         return (
           <IconContainer>
             <Icon url={icon.url} />

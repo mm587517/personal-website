@@ -1,6 +1,8 @@
 import { styled } from '../../Theme/styled';
 
 export const IconContainer = styled.div`
+  margin: auto;
+  width: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,7 +14,7 @@ export const IconContainer = styled.div`
 `;
 
 export const Section = styled.div`
-  width: 40%;
+  width: 50%;
 
   display: flex;
   justify-content: space-between;
